@@ -3,6 +3,11 @@ import java.util.*;
 public class CellPhoneApplication {
     public static void main(String[] args) {
        CellPhone iPhone=  new CellPhone();
+       CellPhone cellPhone1 =  new CellPhone();
+        CellPhone cellPhone2 =  new CellPhone();
+
+        cellPhone2.setserialNumber(46456);
+        System.out.println(cellPhone2.getserialNumber());
 
         iPhone.setserialNumber(345345);
         System.out.println(iPhone.getserialNumber());
@@ -19,5 +24,18 @@ public class CellPhoneApplication {
         iPhone.setowner("Sandra");
         System.out.println(iPhone.getowner());
 
+        cellPhone1.setowner("Sai");
+        cellPhone1.dial("855-555-2222");
+
+        cellPhone1.setphoneNumber("1-855-239-4503");
+        System.out.println("-------");
+        display(iPhone);
+        display(cellPhone2);
+
+
+    }
+
+    public static void display(CellPhone phone) {
+        System.out.println(phone.serialNumber);
     }
 }

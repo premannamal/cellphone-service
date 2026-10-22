@@ -2,7 +2,7 @@ package com.pluralsight;
 import java.util.*;
 public class CellPhone {
 
-    private int serialNumber;
+    public int serialNumber;
     private String model;
     private String carrier;
     private String phoneNumber;
@@ -69,6 +69,10 @@ public class CellPhone {
         public void setowner(String owner){
             this.owner = owner; // 'this' keyword distinguishes the class variable from the parameter
         }
+
+       public void dial(String phoneNumber) {
+        System.out.println(owner + "'s phone is calling " + phoneNumber);
+       }
 
 }
 
