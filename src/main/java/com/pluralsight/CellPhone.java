@@ -14,16 +14,18 @@ public class CellPhone {
         this.carrier = "";
         this.phoneNumber = "";
         this.owner = "";
-
-        // Getter for 'serialNumber'
+    }
+        //getter for 'serialNumber'
         public int getserialNumber() {
             return serialNumber;
         }
 
         // Setter for 'serialNumber'
-        public void setserialNumber(String serialNumber){
+        public void setserialNumber(int serialNumber){
             this.serialNumber = serialNumber; // 'this' keyword distinguishes the class variable from the parameter
         }
+
+
 
         // Getter for 'model'
         public String getmodel() {
@@ -42,7 +44,7 @@ public class CellPhone {
         }
 
         // Setter for 'carrier'
-        public void setcarrier(String model){
+        public void setcarrier(String carrier){
             this.carrier = carrier; // 'this' keyword distinguishes the class variable from the parameter
         }
 
@@ -68,6 +70,8 @@ public class CellPhone {
             this.owner = owner; // 'this' keyword distinguishes the class variable from the parameter
         }
 
-        }
-    }
+}
+
+
+
 
