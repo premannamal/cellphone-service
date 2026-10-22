@@ -37,5 +37,9 @@ public class CellPhoneApplication {
 
     public static void display(CellPhone phone) {
         System.out.println(phone.serialNumber);
+       /* System.out.println(phone.model);
+        System.out.println(phone.carrier);
+        System.out.println(phone.phoneNumber);
+        System.out.println(phone.owner); */
     }
 }
